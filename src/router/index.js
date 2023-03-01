@@ -286,6 +286,12 @@ export const asyncRoutes = [
         name: 'ListPaper',
         meta: { title: '考试记录', noCache: true, activeMenu: '/exam/exam' },
         hidden: true
+      },
+      {
+        path: 'exam/certificate-all',
+        component: () => import('@/views/certificate/certificate-list-all'),
+        name: 'ListAllCertificate',
+        meta: { title: '证书管理', noCache: true, icon: 'results' }
       }
     ]
   },
@@ -307,6 +313,7 @@ export const asyncRoutes = [
         name: 'SysConfig',
         meta: { title: '系统配置', icon: 'theme' }
       },
+      
 
       {
         path: 'depart',
