@@ -77,7 +77,8 @@ export default {
     },
 
     encodeString(str){
-      return btoa(encodeURIComponent(str)); 
+      //return btoa(encodeURIComponent(str)); 
+      return btoa(str); 
     },
 
 

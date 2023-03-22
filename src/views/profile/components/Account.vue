@@ -33,6 +33,8 @@ export default {
     },
 
     async submit() {
+      //密码特殊字符问题
+      //this.user.password=encodeURIComponent(this.user.password);
       updateData(this.user).then(() => {
         this.$notify({
           title: '成功',

@@ -210,6 +210,8 @@ export default {
       this.formData.departId = data.id
     },
     handleSave() {
+      //密码特殊字符通过url编码
+      //this.formData.password=encodeURIComponent(this.formData.password);
       saveData(this.formData).then(() => {
         this.$message({
           type: 'success',
